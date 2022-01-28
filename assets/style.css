@@ -1,0 +1,171 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+/* General */
+body {
+    
+    background-color: var(--black);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddd;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: 'Arial Black', Verdana, sans-serif;
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 1rem;
+}
+
+header nav a:hover{
+    color: var(--red);
+    font-weight: 500;
+}
+
+/* Primary piece */
+
+.primary-piece {
+    font-size: 1.5rem;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8) 100%), url('img/cover.jpg');
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.primary-piece .wrapper {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+.primary-piece .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.primary-piece .title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.primary-piece .description {
+    max-width: 50rem;
+    text-align: justify;
+}
+
+.primary-piece .btn-control {
+    margin-top: 2rem;
+}
+
+.primary-piece .btn-control .btn {
+    background-color: rgba(229, 9, 20, 0.75);
+    border: none;
+    padding: .5rem 1.5rem;
+    color: #ddd;
+    border-radius: 3px;
+    transition: 0.3s ease background-color;
+    margin-right: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.primary-piece .btn-control .btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-left: 2px var(--red) solid;
+}
+
+.primary-piece .btn-control .btn i {
+    margin-right: .5rem;
+}
+
+.primary-piece .btn-control .btn .btn-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.primary-piece .container-img {
+    margin-left: 5rem;
+}
+
+.primary-piece .container-img img {
+    height: 25rem;
+}
+
+/* Content area */
+
+.content {
+    margin: 0 1rem;
+}
+
+.content .section-title h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer .author {
+    font-size: 0.8rem;
+}
+
+.author a {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.author a:hover {
+    color: var(--red)
+}
